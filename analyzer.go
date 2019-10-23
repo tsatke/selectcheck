@@ -31,14 +31,3 @@ func run(pass *analysis.Pass) (interface{}, error) {
 	})
 	return nil, nil
 }
-
-func testFunction() {
-	ch := make(chan struct{})
-	select {
-	default:
-	}
-	select {
-	case <-ch:
-	}
-	select {}
-}
